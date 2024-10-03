@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <title>🧮 Mini Calculator</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="calc-container">
-      <h1 class="text-zero">0</h1>
+      <div class="user-Input">0</div>
       <div class="button-container">
-        <button type="button" class="keys">AC</button>
+        <button type="button" class="operation">AC</button>
         <button type="button" class="operation">+/-</button>
-        <button type="button">%</button>
-        <button type="button"></button>
+        <button type="button" class="operation">%</button>
+        <button type="button" class="operation">÷</button>
         <button type="button" class="number">7</button>
         <button type="button" class="number">8</button>
         <button type="button" class="number">9</button>
@@ -26,12 +26,12 @@
         <button type="button" class="number">2</button>
         <button type="button" class="number">3</button>
         <button type="button" class="operation">+</button>
-        <button type="button" class="keys">DEL</button>
+        <button type="button" class="operation">DEL</button>
         <button type="button" class="number">0</button>
-        <button type="button" class="keys">.</button>
-        <button type="button" class="operation">=</button>
+        <button type="button" class="operation">.</button>
+        <button type="button" class="equal">=</button>
       </div>
     </div>
-    <script src="src/script.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
