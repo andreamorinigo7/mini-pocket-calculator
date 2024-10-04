@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Delete the last character from the current input
   function deleteLast() {
-    currentInput = currentInput.slice(0, -1) || "0"; // If input is empty, reset to "0"
+    currentInput = currentInput.slice(0, -1) || "0";
     updateDisplay();
   }
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function inputNumber(number) {
     if (awaitingSecondOperand) {
       currentInput = number; // Start new number after an operator
-      awaitingSecondOperand = false;
+      awaitingSecondOperand = true;
     } else {
       currentInput = currentInput === "0" ? number : currentInput + number;
     }
