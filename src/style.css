@@ -18,14 +18,13 @@ button:hover {
   opacity: 0.3;
 }
 
-.user-Input {
+.display {
   text-align: end;
   margin-right: 15px;
   font-size: 50px;
   font-family: sans-serif;
   font-weight: 100;
 }
-
 .calc-container {
   text-align: center;
   width: 350px;
@@ -40,4 +39,16 @@ button:hover {
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 15px;
   grid-column-gap: 10px;
+}
+
+#btn-clear {
+  grid-column: span 2;
+  width: 160px;
+  border-radius: 20px;
+}
+
+#btn-delete {
+  grid-column: span 2;
+  width: 160px;
+  border-radius: 20px;
 }
